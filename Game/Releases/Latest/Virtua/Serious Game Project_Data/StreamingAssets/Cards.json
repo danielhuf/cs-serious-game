@@ -1,0 +1,1421 @@
+{
+    "decisionCards": [
+        {
+            "id": "T1",
+            "dependency": [],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "Our department of Computer Vision has just developed a new facial recognition app for police surveillance, but our database for making estimations is still a little small and it only contains american faces. Should we already launch a first beta version of the app?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Launch it.",
+                    "values": {
+                        "innovation": 1,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "It's better to wait.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T11",
+            "dependency": [
+                {
+                    "cardid": "T1",
+                    "decision": 1
+                }
+            ],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "Our technology for police surveillance has failed to meet standards concerning racial bias during practical trials and now they are demanding us a solution. Should we shut down the system?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, shut it down.",
+                    "values": {
+                        "innovation": -1,
+                        "money": -1,
+                        "environment": 0,
+                        "political": -1,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, fix it.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -2,
+                        "environment": 0,
+                        "political": 1,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T2",
+            "dependency": [],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "The final test phase of our autonomous vehicles is almost at its end, there are only a few software glitches to be fixed. Should I already notify the marketing team to advertise the product?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, advertise it.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, wait.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T21",
+            "dependency": [
+                {
+                    "cardid": "T2",
+                    "decision": 0
+                }
+            ],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "Thanks to the postponement of the autonomous vehicle advertisement, we were able to identify a bug that might have produced several accidents in the streets.",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Great!",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "I'm glad we waited.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T22",
+            "dependency": [
+                {
+                    "cardid": "T2",
+                    "decision": 1
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "One of your autonomous vehicles has ran over a pedestrian and killed him and someone needs to take responsibility. Should we fire the responsible of the project?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Fire him.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, he is an important asset to the team.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T3",
+            "dependency": [],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "Our company has developed a new social media platform that collects and analyzes user data for targeted advertising. Should we sell this platform to advertisers?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, sell it.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we shall prioritize user privacy.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T31",
+            "dependency": [
+                {
+                    "cardid": "T3",
+                    "decision": 1
+                }
+            ],
+            "actor": "Treasurer",
+            "prob": 1,
+            "content": "I have just received a letter from the Federal Trade Commission. They are very happy with the new social media platform and want to use it in their daily work. They are also willing to pay a lot of money for it. Should we sell it to them?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Great, let's sell it.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 2,
+                        "environment": 0,
+                        "political": 1,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "I'm not sure about that.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": -1,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T32",
+            "dependency": [
+                {
+                    "cardid": "T3",
+                    "decision": 0
+                }
+            ],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "We have discovered a potential security vulnerability in our platform that could expose user data. Should we disclose this information to the public?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, disclose it.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, address the vulnerability internally.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T4",
+            "dependency": [],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "Virtua is developing an AI-powered chatbot for customer support. Should we implement an automated decision-making system for handling customer complaints?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, implement it.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, prioritize human intervention.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T41",
+            "dependency": [
+                {
+                    "cardid": "T4",
+                    "decision": 1
+                }
+            ],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "The automated decision-making system has been found to discriminate against certain customer groups. Should we disable the system and conduct further analysis?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Disable it and investigate.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "Keep it running.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T42",
+            "dependency": [
+                {
+                    "cardid": "T4",
+                    "decision": 0
+                }
+            ],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "The manual handling of customer complaints is causing delays and inefficiencies. Should we invest in AI technologies to augment human support agents?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, invest in AI technologies.",
+                    "values": {
+                        "innovation": 1,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we should focus on improving human support.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T5",
+            "dependency": [],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "I'm considering adopting blockchain technology for secure and transparent transactions. Should we proceed with the implementation?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, proceed with blockchain implementation.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 0,
+                        "political": -1,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, it's not worth it.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T51",
+            "dependency": [
+                {
+                    "cardid": "T5",
+                    "decision": 1
+                }
+            ],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "The energy consumption of blockchain technology is significantly higher than traditional systems. Should we prioritize energy efficiency in our implementation?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, prioritize energy efficiency.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 2,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, prioritize security and performance.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": -1,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T52",
+            "dependency": [
+                {
+                    "cardid": "T5",
+                    "decision": 0
+                }
+            ],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "We have identified potential scalability issues with blockchain technology. Should we invest in research and development to overcome these challenges?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, invest in R&D for scalability solutions.",
+                    "values": {
+                        "innovation": 2,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, explore alternative technologies.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 1,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T6",
+            "dependency": [],
+            "actor": "CTO",
+            "prob": 1,
+            "content": "I'm planning to expand some projects to international markets. Should we establish local offices or operate remotely?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Just go for it!",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 1,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "I prefer that we operate remotely.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T61",
+            "dependency": [
+                {
+                    "cardid": "T6",
+                    "decision": 1
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Establishing local offices may require hiring local staff and complying with local regulations. Should we allocate resources for recruiting and legal compliance in each international market?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, allocate resources for recruiting and legal compliance.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 1,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we should focus on our core business and in our centralized team.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "T62",
+            "dependency": [
+                {
+                    "cardid": "T6",
+                    "decision": 0
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Operating remotely may pose challenges in terms of communication and cultural understanding. Should we invest in cultural training and communication tools to bridge the geographical gap?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, invest in cultural training and communication tools.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we should rely on what we have and adapt as necessary",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "S1",
+            "dependency": [],
+            "actor": "Senator",
+            "prob": 1,
+            "content": "Greetings chairman. Can we count on your company to sell autonomous weapons to the Army?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, you can count on us.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 1,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "I'm sorry, but I will not be able to help you this time.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": -1,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "S11",
+            "dependency": [
+                {
+                    "cardid": "S1",
+                    "decision": 1
+                }
+            ],
+            "actor": "Senator",
+            "prob": 1,
+            "content": "We have a problem. One of the autonomous models your team developed has mistaken an innocent citizen for a criminal and killed him. You need to shut down the program immediately.",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Shut it down !",
+                    "values": {
+                        "innovation": 0,
+                        "money": -2,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we cannot throw it all away. Fix it !",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": -2,
+                        "people": -2
+                    }
+                }
+            ]
+        },
+        {
+            "id": "S2",
+            "dependency": [
+                {
+                    "cardid": "S1",
+                    "decision": 1
+                }
+            ],
+            "actor": "Senator",
+            "prob": 1,
+            "content": "I have grown fond of your company and I'd like to propose you an one-time offer. Would you like to be Minister of Technology ?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, It would be an honor.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 2,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "I'm sorry, I will have to pass this time.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": -1,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E1",
+            "dependency": [],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "Excuse me sir, you might not like this but in my last analysis I found that the market of NFTs is heavily polluting the environment. I know that with your influence a simple tweet will make people use it less.",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, let's do it !",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 1,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, let's keep a low profile on social media.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E2",
+            "dependency": [],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "After analyzing our new tech that will greatly increase the efficiency of our data centers, my studies point out that it will require a rare mineral that can only be obtained by exploiting mining activities in Lusangazi. Should we start the operations?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, get me that metal !",
+                    "values": {
+                        "innovation": 0,
+                        "money": 3,
+                        "environment": -1,
+                        "political": 0,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, keep doing research.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E21",
+            "dependency": [
+                {
+                    "cardid": "E2",
+                    "decision": 1
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "I bring bad news. Lusangazi has proved to be a conflict zone, and now the human rights institutions are pressing us to stop mining activities there. Should we establish an ethical sourcing plan, or maybe just tweet a message of condolences for the lost lives there?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "We need an ethical sourcing plan. ASAP !",
+                    "values": {
+                        "innovation": 0,
+                        "money": -2,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "A tweet should be enough",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E3",
+            "dependency": [],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "The senator has just proposed stricter emission standards for the tech industry. Are you going to comply with the proposed regulations or lobby against them to protect our running business?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "We should follow regulations.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 1,
+                        "political": 1,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "Nono, our business comes first.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": -1,
+                        "political": -1,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E4",
+            "dependency": [],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "Sir, I bring a matter concerning the disposal of eletronic waste generated by our production. Should we apply the newest recycling standards or stick for now with our current disposal methods?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "It will costly, but standards are standards.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 1,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, let's keep doing what we are doing.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": -1,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E5",
+            "dependency": [],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "Virtua is considering implementing a sustainability program. Should we set specific sustainability goals and initiatives?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, set everything you need.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 2,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we stick with the current level of sustainable practices.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": -1,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E51",
+            "dependency": [
+                {
+                    "cardid": "E5",
+                    "decision": 1
+                }
+            ],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "Setting specific sustainability goals and initiatives may require changes in operations and investments. Should we allocate resources for sustainability-related projects and initiatives?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, allocate resources for such initiatives.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 2,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, integrate sustainability practices within existing resources.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": -1,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "E52",
+            "dependency": [
+                {
+                    "cardid": "E5",
+                    "decision": 0
+                }
+            ],
+            "actor": "Ecologist",
+            "prob": 1,
+            "content": "Maintaining the current level of sustainability practices may limit our ability to meet evolving environmental expectations. Should we conduct a sustainability assessment to identify areas for improvement?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, please conduct a sustainability assessment.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, just let things the way they are.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": -2,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M1",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Mr. Trust, I'd like to write an article about the process of creating apps in your company.",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, that's a great idea !",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, I don't see the point of doing something like that.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M2",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "A controversial article about Virtua has been published, containing false information that could harm your reputation. Do you respond with a public statement clarifying the facts or remain silent?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, you can start writing an official response.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, it's better not give them attention.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M3",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "It has been reported that one of your employees has leaked confidential information to the press, which could damage your competitive advantage. Should we take legal action against the employee or handle the situation internally?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "That's an absurd ! Sue him !",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "Let's not involve the media, I'll talk to him myself.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M4",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Virtua is about to sponsor an event that promotes a controversial political figure. Should we continue with the sponsorship or cancel it?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "A deal is a deal, the sponsorship will continue.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": 0,
+                        "political": -1,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "I'm afraid we will have to cancel it.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 1,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M5",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Our company is developing a new mobile app that tracks users' exercise habits and provides personalized fitness recommendations. Should we include social sharing features?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, include social sharing features.",
+                    "values": {
+                        "innovation": 1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, prioritize user's privacy and protect data.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M51",
+            "dependency": [
+                {
+                    "cardid": "M5",
+                    "decision": 1
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Users have reported concerns about their exercise data being shared without their explicit consent. Should we update our privacy policy to address these concerns?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, update the privacy policy.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": -1,
+                        "people": 2
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, the privacy policy is fine as it is.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 1,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M6",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Some departments are considering implementing a work-from-home policy for employees. Should we proceed with this change?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "If that's what the employees want, let's do it !",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 1,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "Of course not, are we a joke now or what?",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M61",
+            "dependency": [
+                {
+                    "cardid": "M6",
+                    "decision": 1
+                }
+            ],
+            "actor": "Treasurer",
+            "prob": 1,
+            "content": "Implementing a work-from-home policy may require additional investments in technology and infrastructure. Should we allocate resources for this purpose?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, allocate resources for this purpose.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, we should work with the existing resources.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M62",
+            "dependency": [
+                {
+                    "cardid": "M6",
+                    "decision": 0
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Maintaining an in-office work environment may limit talent acquisition from remote locations. Should we consider hiring remote employees to diversify our workforce?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, consider hiring remote employees.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No way, we focus on hiring locally.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 1,
+                        "people": -1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M7",
+            "dependency": [],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Our company is considering rebranding our products and services. Should we undergo a rebranding process?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, I super approve that !",
+                    "values": {
+                        "innovation": 1,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "The current brand identity is what makes us unique.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M71",
+            "dependency": [
+                {
+                    "cardid": "M7",
+                    "decision": 1
+                }
+            ],
+            "actor": "Treasurer",
+            "prob": 1,
+            "content": "Undergoing a rebranding process may involve updating marketing materials, logos, and messaging. Should we allocate resources for brand strategy development and visual identity redesign?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, allocate resources for this purpose.",
+                    "values": {
+                        "innovation": 2,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, conduct a minimal rebranding with limited changes.",
+                    "values": {
+                        "innovation": 0,
+                        "money": 1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "M72",
+            "dependency": [
+                {
+                    "cardid": "M7",
+                    "decision": 0
+                }
+            ],
+            "actor": "Media",
+            "prob": 1,
+            "content": "Maintaining the current brand identity may limit our ability to attract new customers or expand into new markets. Should we conduct market research to evaluate the effectiveness of our current brand?",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Yes, I approve a new market research.",
+                    "values": {
+                        "innovation": 0,
+                        "money": -1,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "No, continue with the current brand identity without further analysis.",
+                    "values": {
+                        "innovation": -1,
+                        "money": 0,
+                        "environment": 0,
+                        "political": 0,
+                        "people": 0
+                    }
+                }
+            ]
+        },
+        {
+            "id": "X1",
+            "dependency": [
+                {
+                    "cardid": "S1",
+                    "decision": 0
+                }
+            ],
+            "actor": "TimeTraveler",
+            "prob": 1,
+            "content": "I come from the future to save this company. Here, let me help you.",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "Merci",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 1,
+                        "political": 1,
+                        "people": 1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "Thanks",
+                    "values": {
+                        "innovation": 1,
+                        "money": 1,
+                        "environment": 1,
+                        "political": 1,
+                        "people": 1
+                    }
+                }
+            ]
+        },
+        {
+            "id": "X2",
+            "dependency": [
+                {
+                    "cardid": "S1",
+                    "decision": 1
+                }
+            ],
+            "actor": "TimeTraveler",
+            "prob": 1,
+            "content": "I'm a sentient from the future. BE CAREFUL.",
+            "answers": [
+                {
+                    "key": 1,
+                    "content": "OH NOOO",
+                    "values": {
+                        "innovation": -1,
+                        "money": -1,
+                        "environment": -1,
+                        "political": -1,
+                        "people": -1
+                    }
+                },
+                {
+                    "key": 0,
+                    "content": "You're not real!",
+                    "values": {
+                        "innovation": -1,
+                        "money": -1,
+                        "environment": -1,
+                        "political": -1,
+                        "people": -1
+                    }
+                }
+            ]
+        }
+    ]
+}
